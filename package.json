@@ -1,0 +1,24 @@
+{
+  "name": "techblog",
+  "version": "1.0.0",
+  "description": "It is full stack tech blog.",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunilsharmapoudel/techblog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunilsharmapoudel/techblog/issues"
+  },
+  "homepage": "https://github.com/sunilsharmapoudel/techblog#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
+  }
+}
