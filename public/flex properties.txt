@@ -1,0 +1,43 @@
+Justify Content
+----------------
+
+Definition and Usage
+
+The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+Tip: Use the align-items property to align the items vertically.
+
+justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly|initial|inherit;
+-------------------------------------------------------
+
+Align Content
+----------------
+Definition and Usage
+
+The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+Note: There must be multiple lines of items for this property to have any effect!
+Tip: Use the justify-content property to align the items on the main-axis (horizontally).
+
+align-content: stretch|center|flex-start|flex-end|space-between|space-around|space-evenly|initial|inherit;
+------------------------------------------------------------------------------------------
+
+ Align items
+---------------
+Definition and Usage
+
+The align-items property specifies the default alignment for items inside the flexible container.
+
+Tip: Use the align-self property of each item to override the align-items property.
+
+align-items: stretch|center|flex-start|flex-end|baseline|initial|inherit;
+
+------------------------------------------------------------------------------------------
+Align self
+----------
+Definition and Usage
+
+The align-self property specifies the alignment for the selected item inside the flexible container.
+
+Note: The align-self property overrides the flexible container's align-items property.
+
+align-self: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit;
+-------------------------------------------------------------------------------

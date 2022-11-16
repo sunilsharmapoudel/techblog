@@ -1,24 +1,20 @@
 {
-  "name": "techblog",
+  "name": "projects",
   "version": "1.0.0",
-  "description": "It is full stack tech blog.",
+  "description": "",
   "main": "index.js",
-  "type":"module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/main.css --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sunilsharmapoudel/techblog.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sunilsharmapoudel/techblog/issues"
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "tailwindcss": "^3.2.2"
   },
-  "homepage": "https://github.com/sunilsharmapoudel/techblog#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "express-handlebars": "^6.0.6"
+    "@preline/dropdown": "^1.2.0"
   }
 }
