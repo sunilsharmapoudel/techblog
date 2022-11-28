@@ -6,7 +6,6 @@ module.exports = {
       fontFamily: {
         sans: "font-sans",
       },
-
       colors: {
         primary: "#212121",
         secondary: "#cf2e2e",

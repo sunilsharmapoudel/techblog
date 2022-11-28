@@ -22,16 +22,170 @@
   <body>
     <!-- navigation -->
     <div class="header-wraper">
-      <div class="w-full h-24 flex flex-wrap items-center justify-between">
+      <div
+        class="w-full h-24 flex flex-wrap self-center items-center justify-between"
+      >
         <div
-          class="2xl:text-7xl 2xl:ml-10 xl:text-6xl xl:ml-8 lg:text-5xl lg:ml-6 md:text-3xl md:ml-10"
+          class="fixed top-0 left-0 w-full h-full z-50 lg:invisible lg:absolute"
+          x-data="{ isOpen: false}"
+          @keydown.escape="isOpen = false"
+          :class="{ ' bg-slate-500 opacity-90 transition-all duration-500 ' : isOpen}"
+        >
+          <button
+            class="absolute group right-5 mt-5 lg:invisible lg:absolute"
+            @click="isOpen = !isOpen"
+          >
+            <div
+              class="relative left-2 flex overflow-hidden items-center justify-center rounded-sm w-10 h-10 transform transition-all bg-secondary ring-0 ring-gray-200 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+            >
+              <div
+                class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-100 origin-center overflow-hidden group-active:-rotate-180"
+              >
+                <div
+                  class="bg-white h-[2px] w-7 transform transition duration-100 group-active:rotate-45 -translate-x-1"
+                ></div>
+                <div
+                  class="bg-white h-[2px] w-7 rounded transition duration-100"
+                ></div>
+                <div
+                  class="bg-white h-[2px] w-7 transform transition duration-100 group-active:-rotate-45 -translate-x-1"
+                ></div>
+              </div>
+            </div>
+          </button>
+
+          <div
+            class="flex overflow-y-auto flex-col min-h-full relative w-max p-4 bg-tertiary"
+            :class="{ 'block': isOpen, 'hidden': !isOpen }">
+            <div class="flex flex-row justify-center items-center">
+              <div class="max-w-3xl mx-auto">
+                <div class="mt-5">
+                  <form class="flex items-center">
+                    <label for="search" class="sr-only">Search</label>
+                    <div class="relative w-full">
+                      <input
+                        type="text"
+                        id="search"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-red-500 focus:border-red-500 block w-full p-2.5"
+                        placeholder="Search laptops, smartphone..."
+                        required=""
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-secondary border border-secondary hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    >
+                      Search
+                      <span class="iconify ml-2" data-icon="fa:search"></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <nav
+              class="border-y-4 my-4 border-secondary rounded-sm text-primary uppercase font-mono font-semibold"
+            >
+              <ul class="relative my-5 text-lg uppercase">
+                <li class="my-1"><a href="#">Home</a></li>
+                <li class="group relative my-1">
+                  <a href="#"> Gadget </a>
+                  <span
+                    class="iconify inline-block"
+                    data-icon="material-symbols:keyboard-arrow-down-rounded"
+                  ></span>
+                  <ul
+                    class="divide-y-2 shadow-lg hidden rounded-lg group-hover:block w-max bg-white p-2 text-sm"
+                  >
+                    <li class="block"><a href="#">Computer Network</a></li>
+                    <li class="block"><a href="#">phone</a></li>
+                    <li class="block"><a href="#">laptop</a></li>
+                  </ul>
+                </li>
+                <li class="my-1">News</li>
+                <li class="my-1">
+                  <a href="#">Computer</a>
+                </li>
+                <li class="my-1">
+                  <a href="#">Laptop</a>
+                </li>
+                <li class="my-1">
+                  <a href="#">Phone</a>
+                </li>
+                <li class="my-1"><a href="#"></a> Security</li>
+              </ul>
+            </nav>
+
+            <div class="text-3xl mb-2">
+              <ul class="flex items-center">
+                <li>
+                  <a href="#"
+                    ><span
+                      class="iconify text-blue-800 hover:bg-white p-1 rounded-[5px] ease-in duration-200"
+                      data-icon="gg:facebook"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="iconify text-sky-500 hover:bg-white p-1 rounded-[5px] ease-in duration-200"
+                      data-icon="icon-park-solid:twitter"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      class="iconify text-secondary hover:bg-white p-1 rounded-[5px] ease-in duration-200"
+                      data-icon="fa-brands:youtube"
+                    ></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="flex flex-col justify-center content-center bg-purple-900 w-full h-max rounded-md m"
+            >
+              <div
+                class="inline-flex items-center text-white font-sans font-semibold self-center my-3 gap-x-2"
+              >
+                <span class="iconify" data-icon="mdi:card-account-mail"></span>
+                <p class="tracking-wide">Subscribe</p>
+              </div>
+              <div
+                class="text-primary font-sans font-semibold self-center mb-3"
+              >
+                <form class="" action="">
+                  <input
+                    type="email"
+                    id="submail"
+                    class="bg-white rounded-md p-2"
+                    placeholder="yourmail@gmail.com"
+                    required=""
+                  />
+                  <div
+                    class="mx-auto mt-3 text-center text-white p-1 w-max border border-white rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+                  >
+                    <button type="submit">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="Logo 2xl:text-7xl 2xl:ml-10 xl:text-6xl lg:text-4xl lg:ml-8 xl:ml-8 max-lg:absolute max-lg:left-[50%] max-lg:text-[50px]"
         >
           <a href="#"
             ><span class="iconify" data-icon="grommet-icons:technology"></span>
           </a>
         </div>
+
         <nav
-          class="2xl:text-2xl xl:text-xl lg:text-lg text-primary uppercase font-mono font-semibold"
+          class="2xl:text-2xl xl:text-xl max-lg:invisible max-lg:absolute text-primary uppercase font-mono font-semibold"
         >
           <ul class="flex items-center">
             <li
@@ -73,7 +227,7 @@
                 ></span>
               </button>
               <div
-                class="2xl:text-xl xl:text-lg lg:text-sm lg:left-[28px] xlg:left-[110px]  absolute  m-2 group-hover:translate-y-[5px] duration-500 ease-in-out"
+                class="2xl:text-xl xl:text-lg lg:text-sm lg:left-[28px] xlg:left-[110px] absolute m-2 group-hover:translate-y-[5px] duration-500 ease-in-out"
               >
                 <ul
                   class="divide-y-2 hidden rounded-lg shadow-lg group-hover:block absolute z-10 bg-tertiary"
@@ -654,7 +808,7 @@
                 ></span>
               </button>
               <div
-                class="2xl:absolute 2xl:left-[650px] xl:left-[400px] lg:left-[200px] absolute m-2 group-hover:translate-y-[5px] duration-500 ease-in-out"
+                class="2xl:absolute 2xl:left-[650px] xl:left-[400px] lg:left-[200px] xmd absolute m-2 group-hover:translate-y-[5px] duration-500 ease-in-out"
               >
                 <ul
                   class="hidden rounded-lg shadow-lg group-hover:block absolute text-lg z-10 bg-tertiary"
@@ -767,7 +921,7 @@
           </ul>
         </nav>
         <div
-          class="2xl:text-5xl 2xl:mr-12 xl:text-3xl mr-8 lg:text-2xl md:text-xl text-primary"
+          class="2xl:text-5xl 2xl:mr-12 xl:text-3xl mr-8 lg:text-2xl max-lg:invisible max-lg:absolute text-primary"
         >
           <ul class="flex items-center">
             <li>
@@ -799,13 +953,22 @@
                 ><span class="iconify ml-2" data-icon="ci:line-xl"></span
               ></a>
             </li>
-            <li>
+            <li class="">
               <a href="#"
                 ><span
                   class="iconify ml-2 hover:bg-tertiary p-1 rounded-[5px] ease-in duration-200"
                   data-icon="fa:search"
                 ></span
               ></a>
+              <div class="absolute left-[60%] w-max h-max bg-tertiary rounded-md p-4 z-100">
+                <form class="flex justify-center items-center gap-x-2">
+                  <input type="search" placeholder="Search" class=" p-1 rounded-md">
+                  <button type="submit" class=" bg-white overflow-hidden p-1 rounded-md text-3xl ml-2"><span class="iconify" data-icon="fa:search"></span></Button>
+                </form>
+
+              </div>
+
+
             </li>
           </ul>
         </div>
