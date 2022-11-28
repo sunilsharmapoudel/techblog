@@ -41,3 +41,12 @@ Note: The align-self property overrides the flexible container's align-items pro
 
 align-self: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit;
 -------------------------------------------------------------------------------
+
+Pass css to alpine JS 
+___________________________________
+:class="{ ' bg-slate-500 opacity-90 transition-all duration-500 ' : isOpen}"
+
+
+visibility:hidden- It is not visible but gets up it’s original space whereas,
+
+display:none- It is hidden and takes no space.
