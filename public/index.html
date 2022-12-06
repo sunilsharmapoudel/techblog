@@ -18,11 +18,9 @@
     <!-- Iconify-->
 
     <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
-
   </head>
 
   <body>
-
     <!--header-->
 
     <!-- navigation -->
@@ -91,23 +89,23 @@
             </div>
 
             <nav
-              class="border-y-4 my-4 border-secondary rounded-sm text-primary uppercase font-mono font-semibold"
+              class="flex items-center border-secondary rounded-sm text-primary uppercase font-mono font-semibold"
             >
-              <ul class="relative my-5 text-lg uppercase">
-                <li class="my-1"><a href="#">Home</a></li>
-                <li class="group relative my-1">
+              <ul class="relative text-lg uppercase">
+                <li class=""><a href="#">Home</a></li>
+                <li class="group relative">
                   <a href="#"> Gadget </a>
                   <span
                     class="iconify inline-block"
                     data-icon="material-symbols:keyboard-arrow-down-rounded"
                   ></span>
-                  <ul
-                    class="divide-y-2 shadow-lg hidden rounded-lg group-hover:block w-max bg-white p-2 text-sm"
-                  >
+                  <div class="relative  shadow-lg hidden rounded-lg group-hover:block max-w-xs bg-white text-sm">
+                  <ul class="divide-y-2 p-2">
                     <li class="block"><a href="#">Computer Network</a></li>
                     <li class="block"><a href="#">phone</a></li>
                     <li class="block"><a href="#">laptop</a></li>
                   </ul>
+                </div>
                 </li>
                 <li class="my-1">News</li>
                 <li class="my-1">
@@ -220,7 +218,6 @@
           class="2xl:text-2xl xl:text-xl max-lg:hidden max-lg:absolute text-primary uppercase font-mono font-semibold"
         >
           <ul class="flex items-center">
-
             <li
               class="p-4 rounded-[5px] hover:bg-tertiary ease-in duration-200"
             >
@@ -238,15 +235,19 @@
                 ></span>
               </button>
               <div
-                class="group-hover:translate-y-[5px] duration-500 ease-in-out z-100"
+                class="absolute group-hover: duration-500 ease-in-out z-50"
               >
-                <ul
-                  class="2xl:text-xl xl:text-lg lg:text-md divide-y-2 shadow-lg hidden rounded-lg group-hover:block w-60 absolute -left-[8px] text-lg p-6 m-2 bg-tertiary"
-                >
+              <div class="hidden  group-hover:block w-60 ">
+                <div class=" bg-tertiary m-2 shadow-lg rounded-lg -ml-2 p-6">
+
+             
+                <ul class="divide-y-2 2xl:text-xl xl:text-lg lg:text-md text-lg">
                   <li class="block"><a href="#">Computer Network</a></li>
                   <li class="block"><a href="#">phone</a></li>
                   <li class="block"><a href="#">laptop</a></li>
                 </ul>
+              </div>
+
               </div>
             </li>
 
@@ -271,12 +272,10 @@
                     class="2xl:w-[1200px] 2xl:min-h-[400px] xl:w-[1000px] xl:min-h-[380px] lg:w-[950px] lg:min-h-[380px] py-6 flex flex-col sm:py-2"
                   >
                     <section class="py-2 mx-auto space-y-8">
-
                       <div
                         class="container flex flex-row items-stretch justify-left space-x-4"
                         x-data="{tab: 1}"
                       >
-
                         <div
                           class="flex flex-col justify-start w-1/12 space-y-2"
                         >
@@ -810,22 +809,18 @@
                             <li><a href=""> Smart Phone </a></li>
                           </ul>
                         </div>
-
                       </div>
-
                     </section>
                   </div>
                 </ul>
               </div>
             </li>
 
-          
             <li
-                class="p-4 rounded-[5px] hover:bg-tertiary ease-in duration-200"
-              >
-                <a href="#">Computer</a>
+              class="p-4 rounded-[5px] hover:bg-tertiary ease-in duration-200"
+            >
+              <a href="#">Computer</a>
             </li>
-            
 
             <li
               class="p-4 rounded-[5px] hover:bg-tertiary ease-in duration-200"
@@ -960,7 +955,6 @@
                 </ul>
               </div>
             </li>
-
           </ul>
         </nav>
         <!-- Desktop Menu-->
@@ -1041,7 +1035,6 @@
 
         <!-- Desktop Nav-->
       </div>
-
     </div>
     <!-- navigation -->
 
@@ -1052,8 +1045,10 @@
     <div class="transform-none">
       <div class="transform-none">
         <div class="transform-none">
+
+          <!-- First Row -->
           <div
-            class="2xl:w-[1300px] xl:w-[1200px] lg:w-[1050px] md:w-[100%] transform-none mx-auto"
+            class="container w-full  transform-none mx-auto"
           >
             <div class="flex flex-wrap justify-center">
               <!-- First Column of first row -->
@@ -1158,7 +1153,7 @@
               <!-- First Column of first row -->
 
               <!-- Second Column of first row -->
-              <div class="w-[45%]">
+              <div class="md:3/5 lg:w-[45%]">
                 <div class="p-2">
                   <div class="flex flex-col">
                     <h3
@@ -1546,8 +1541,6 @@
                             </div>
                           </div>
                         </div>
-
-
                       </div>
                     </div>
                   </div>
@@ -1810,7 +1803,6 @@
                             </div>
                           </div>
                         </div>
-                        
                       </div>
                     </div>
                   </div>
@@ -1819,59 +1811,38 @@
               <!-- Third Column of first row -->
             </div>
           </div>
+          <!-- First Row -->
+
+          <!-- Second Row -->
 
           <div class="bg-tertiary p-10 ">
-            <div class=" mx-auto flex bg-white w-full h-[415px]">
-              <div>
-                <iframe width="745" height="419" src="https://www.youtube.com/embed/DuudSp4sHmg" title="Fetching All Videos of a channel | Youtube Data API V3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div class="container mx-auto flex bg-white w-full  lg:aspect-[16/5.78] ">
+            
 
+              <div>
+                <iframe
+                  width="745"
+                  height="419"
+                  src="https://www.youtube.com/embed/DuudSp4sHmg"
+                  title="Fetching All Videos of a channel | Youtube Data API V3"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
 
               <div>
-                <div class="flex flex-col ml-2 ">
-                  
+                <div class="flex flex-col ml-2">
                   <div class="bg-secondary p-2 shadow-xl">
                     <p class="text-white font-sans">Current Playing</p>
-                    <h3  class="text-white font-semibold overflow-hidden"> iPhone 14 available colors </h3>
+                    <h3 class="text-white font-semibold overflow-hidden">
+                      iPhone 14 available colors
+                    </h3>
                   </div>
-                  
-                  <div class="flex flex-col mt-2 divide-y-2 overflow-auto">
-                    
-                    <div class="flex items-center gap-x-2">
 
-                    <div class=" ">
-                      <span
-                        class="iconify text-secondary text-xl"
-                        data-icon="material-symbols:arrow-right"
-                      ></span>
-                    </div>
-                    <div
-                      class="bg-cover bg-center w-[220px] h-[100px] "
-                      style="
-                        background-image: url(./assets/Iphone-12.jpg);
-                      "
-                    ></div>
-                    <div class="ml-3">
-                      <div>
-                        <h3
-                          class="mb-1 text-primary text-lg font-sans font-semibold"
-                        >
-                          Jeep Compass adfa dsf adf adsf
-                        </h3>
-                      </div>
-                      <div>
-                        <p
-                          class="mb-1 text-lg text-primary font-sans"
-                        >
-                          Despite its performance limitatins, you'll be
-                          hardpressed to find a better choice
-                        </p>
-                      </div>
-                    
-                  </div>
-                    </div>
+                  <div class="flex flex-col mt-2 divide-y-2 aspect-[9/7.5] overflow-scroll">
                     <div class="flex items-center gap-x-2">
-
                       <div class=" ">
                         <span
                           class="iconify text-secondary text-xl"
@@ -1879,10 +1850,8 @@
                         ></span>
                       </div>
                       <div
-                        class="bg-cover bg-center w-[220px] h-[100px] "
-                        style="
-                          background-image: url(./assets/Iphone-12.jpg);
-                        "
+                        class="bg-cover bg-center w-[220px] h-[100px]"
+                        style="background-image: url(./assets/Iphone-12.jpg)"
                       ></div>
                       <div class="ml-3">
                         <div>
@@ -1893,103 +1862,588 @@
                           </h3>
                         </div>
                         <div>
-                          <p
-                            class="mb-1 text-lg text-primary font-sans"
-                          >
+                          <p class="mb-1 text-lg text-primary font-sans">
                             Despite its performance limitatins, you'll be
                             hardpressed to find a better choice
                           </p>
                         </div>
-                      
+                      </div>
                     </div>
+                    <div class="flex items-center gap-x-2">
+                      <div class=" ">
+                        <span
+                          class="iconify text-secondary text-xl"
+                          data-icon="material-symbols:arrow-right"
+                        ></span>
                       </div>
-
-                      <div class="flex items-center gap-x-2">
-
-                        <div class=" ">
-                          <span
-                            class="iconify text-secondary text-xl"
-                            data-icon="material-symbols:arrow-right"
-                          ></span>
+                      <div
+                        class="bg-cover bg-center w-[220px] h-[100px]"
+                        style="background-image: url(./assets/Iphone-12.jpg)"
+                      ></div>
+                      <div class="ml-3">
+                        <div>
+                          <h3
+                            class="mb-1 text-primary text-lg font-sans font-semibold"
+                          >
+                            Jeep Compass adfa dsf adf adsf
+                          </h3>
                         </div>
-                        <div
-                          class="bg-cover bg-center w-[220px] h-[100px] "
-                          style="
-                            background-image: url(./assets/Iphone-12.jpg);
-                          "
-                        ></div>
-                        <div class="ml-3">
-                          <div>
-                            <h3
-                              class="mb-1 text-primary text-lg font-sans font-semibold"
-                            >
-                              Jeep Compass adfa dsf adf adsf
-                            </h3>
-                          </div>
-                          <div>
-                            <p
-                              class="mb-1 text-lg text-primary font-sans"
-                            >
-                              Despite its performance limitatins, you'll be
-                              hardpressed to find a better choice
-                            </p>
-                          </div>
-                        
+                        <div>
+                          <p class="mb-1 text-lg text-primary font-sans">
+                            Despite its performance limitatins, you'll be
+                            hardpressed to find a better choice
+                          </p>
+                        </div>
                       </div>
+                    </div>
+
+                    <div class="flex items-center gap-x-2">
+                      <div class=" ">
+                        <span
+                          class="iconify text-secondary text-xl"
+                          data-icon="material-symbols:arrow-right"
+                        ></span>
+                      </div>
+                      <div
+                        class="bg-cover bg-center w-[220px] h-[100px]"
+                        style="background-image: url(./assets/Iphone-12.jpg)"
+                      ></div>
+                      <div class="ml-3">
+                        <div>
+                          <h3
+                            class="mb-1 text-primary text-lg font-sans font-semibold"
+                          >
+                            Jeep Compass adfa dsf adf adsf
+                          </h3>
                         </div>
-
-                        <div class="flex items-center gap-x-2">
-
-                          <div class=" ">
-                            <span
-                              class="iconify text-secondary text-xl"
-                              data-icon="material-symbols:arrow-right"
-                            ></span>
-                          </div>
-                          <div
-                            class="bg-cover bg-center w-[220px] h-[100px] "
-                            style="
-                              background-image: url(./assets/Iphone-12.jpg);
-                            "
-                          ></div>
-                          <div class="ml-3">
-                            <div>
-                              <h3
-                                class="mb-1 text-primary text-lg font-sans font-semibold"
-                              >
-                                Jeep Compass adfa dsf adf adsf
-                              </h3>
-                            </div>
-                            <div>
-                              <p
-                                class="mb-1 text-lg text-primary font-sans"
-                              >
-                                Despite its performance limitatins, you'll be
-                                hardpressed to find a better choice
-                              </p>
-                            </div>
-                          
+                        <div>
+                          <p class="mb-1 text-lg text-primary font-sans">
+                            Despite its performance limitatins, you'll be
+                            hardpressed to find a better choice
+                          </p>
                         </div>
-                          </div>
+                      </div>
+                    </div>
 
-                    
+                    <div class="flex items-center gap-x-2">
+                      <div class=" ">
+                        <span
+                          class="iconify text-secondary text-xl"
+                          data-icon="material-symbols:arrow-right"
+                        ></span>
+                      </div>
+                      <div
+                        class="bg-cover bg-center w-[220px] h-[100px]"
+                        style="background-image: url(./assets/Iphone-12.jpg)"
+                      ></div>
+                      <div class="ml-3">
+                        <div>
+                          <h3
+                            class="mb-1 text-primary text-lg font-sans font-semibold"
+                          >
+                            Jeep Compass adfa dsf adf adsf
+                          </h3>
+                        </div>
+                        <div>
+                          <p class="mb-1 text-lg text-primary font-sans">
+                            Despite its performance limitatins, you'll be
+                            hardpressed to find a better choice
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                      <div class=" ">
+                        <span
+                          class="iconify text-secondary text-xl"
+                          data-icon="material-symbols:arrow-right"
+                        ></span>
+                      </div>
+                      <div
+                        class="bg-cover bg-center w-[220px] h-[100px]"
+                        style="background-image: url(./assets/Iphone-12.jpg)"
+                      ></div>
+                      <div class="ml-3">
+                        <div>
+                          <h3
+                            class="mb-1 text-primary text-lg font-sans font-semibold"
+                          >
+                            Jeep Compass adfa dsf adf adsf
+                          </h3>
+                        </div>
+                        <div>
+                          <p class="mb-1 text-lg text-primary font-sans">
+                            Despite its performance limitatins, you'll be
+                            hardpressed to find a better choice
+                          </p>
+                        </div>
+                      </div>
+                    </div>
 
-               
 
                   </div>
-
-                  
                 </div>
               </div>
-
-
             </div>
           </div>
+          <!-- Second Row -->
+        </div>
 
+        <!-- Third Row -->
+
+        <div class="container transform-none mx-auto ">
+          <h3
+                    class="text-primary text-lg font-mono font-semibold uppercase mb-4"
+                  >
+                    Latest <span class="text-secondary">Blogs</span>
+                  </h3>
+          <div class="flex flex-wrap gap-x-5">
+
+            <div class="">
+              <div>
+                <div>
+                  <div
+                    class="bg-gradient-to-r from-purple-500 to-pink-500"
+                  >
+                    <a href="#">
+                      <div
+                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
+                        style="
+                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                  <div
+                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
+                  >
+                    <div class="">
+                      <div
+                        class="mb-1 text-primary text-lg font-sans font-bold"
+                      >
+                        <a href="#"
+                          ><h3>
+                            Asus ZenBook UX305 review: A most
+                            affordable and excellent Ultrabook
+                          </h3></a
+                        >
+                      </div>
+                      <div>
+                        <div
+                          class="flex items-center lg:text-xs text-sm text-secondary"
+                        >
+                          <div class="flex">
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star-half"
+                            ></span>
+                          </div>
+
+                          <div class="flex items-center ml-2">
+                            <span
+                              class="iconify mr-2"
+                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
+                            ></span>
+                            <span class="text-xs"
+                              >December 4, 2022</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+                <div>
+                  <div
+                    class="bg-gradient-to-r from-purple-500 to-pink-500"
+                  >
+                    <a href="#">
+                      <div
+                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
+                        style="
+                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                  <div
+                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
+                  >
+                    <div class="">
+                      <div
+                        class="mb-1 text-primary text-lg font-sans font-bold"
+                      >
+                        <a href="#"
+                          ><h3>
+                            Asus ZenBook UX305 review: A most
+                            affordable and excellent Ultrabook
+                          </h3></a
+                        >
+                      </div>
+                      <div>
+                        <div
+                          class="flex items-center lg:text-xs text-sm text-secondary"
+                        >
+                          <div class="flex">
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star-half"
+                            ></span>
+                          </div>
+
+                          <div class="flex items-center ml-2">
+                            <span
+                              class="iconify mr-2"
+                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
+                            ></span>
+                            <span class="text-xs"
+                              >December 4, 2022</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+                <div>
+                  <div
+                    class="bg-gradient-to-r from-purple-500 to-pink-500"
+                  >
+                    <a href="#">
+                      <div
+                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
+                        style="
+                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                  <div
+                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
+                  >
+                    <div class="">
+                      <div
+                        class="mb-1 text-primary text-lg font-sans font-bold"
+                      >
+                        <a href="#"
+                          ><h3>
+                            Asus ZenBook UX305 review: A most
+                            affordable and excellent Ultrabook
+                          </h3></a
+                        >
+                      </div>
+                      <div>
+                        <div
+                          class="flex items-center lg:text-xs text-sm text-secondary"
+                        >
+                          <div class="flex">
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star-half"
+                            ></span>
+                          </div>
+
+                          <div class="flex items-center ml-2">
+                            <span
+                              class="iconify mr-2"
+                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
+                            ></span>
+                            <span class="text-xs"
+                              >December 4, 2022</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+                <div>
+                  <div
+                    class="bg-gradient-to-r from-purple-500 to-pink-500"
+                  >
+                    <a href="#">
+                      <div
+                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
+                        style="
+                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                  <div
+                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
+                  >
+                    <div class="">
+                      <div
+                        class="mb-1 text-primary text-lg font-sans font-bold"
+                      >
+                        <a href="#"
+                          ><h3>
+                            Asus ZenBook UX305 review: A most
+                            affordable and excellent Ultrabook
+                          </h3></a
+                        >
+                      </div>
+                      <div>
+                        <div
+                          class="flex items-center lg:text-xs text-sm text-secondary"
+                        >
+                          <div class="flex">
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star-half"
+                            ></span>
+                          </div>
+
+                          <div class="flex items-center ml-2">
+                            <span
+                              class="iconify mr-2"
+                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
+                            ></span>
+                            <span class="text-xs"
+                              >December 4, 2022</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+                <div>
+                  <div
+                    class="bg-gradient-to-r from-purple-500 to-pink-500"
+                  >
+                    <a href="#">
+                      <div
+                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
+                        style="
+                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                  <div
+                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
+                  >
+                    <div class="">
+                      <div
+                        class="mb-1 text-primary text-lg font-sans font-bold"
+                      >
+                        <a href="#"
+                          ><h3>
+                            Asus ZenBook UX305 review: A most
+                            affordable and excellent Ultrabook
+                          </h3></a
+                        >
+                      </div>
+                      <div>
+                        <div
+                          class="flex items-center lg:text-xs text-sm text-secondary"
+                        >
+                          <div class="flex">
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star-half"
+                            ></span>
+                          </div>
+
+                          <div class="flex items-center ml-2">
+                            <span
+                              class="iconify mr-2"
+                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
+                            ></span>
+                            <span class="text-xs"
+                              >December 4, 2022</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div>
+                <div>
+                  <div
+                    class="bg-gradient-to-r from-purple-500 to-pink-500"
+                  >
+                    <a href="#">
+                      <div
+                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
+                        style="
+                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
+                        "
+                      ></div>
+                    </a>
+                  </div>
+                  <div
+                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
+                  >
+                    <div class="">
+                      <div
+                        class="mb-1 text-primary text-lg font-sans font-bold"
+                      >
+                        <a href="#"
+                          ><h3>
+                            Asus ZenBook UX305 review: A most
+                            affordable and excellent Ultrabook
+                          </h3></a
+                        >
+                      </div>
+                      <div>
+                        <div
+                          class="flex items-center lg:text-xs text-sm text-secondary"
+                        >
+                          <div class="flex">
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="material-symbols:star-half"
+                            ></span>
+                          </div>
+
+                          <div class="flex items-center ml-2">
+                            <span
+                              class="iconify mr-2"
+                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
+                            ></span>
+                            <span class="text-xs"
+                              >December 4, 2022</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
 
         </div>
+        
+        <!-- Third Row -->
+
       </div>
     </div>
-
   </body>
 </html>
