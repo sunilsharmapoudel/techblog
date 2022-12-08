@@ -99,15 +99,17 @@
                     class="iconify inline-block"
                     data-icon="material-symbols:keyboard-arrow-down-rounded"
                   ></span>
-                  <div class="relative  hidden rounded-lg group-hover:block max-w-xs text-sm">
-                  <ul class="divide-y-2 p-2">
-                    <li class="block"><a href="#">Computer Network</a></li>
-                    <li class="block"><a href="#">phone</a></li>
-                    <li class="block"><a href="#">laptop</a></li>
-                  </ul>
-                </div>
+                  <div
+                    class="relative hidden rounded-lg group-hover:block max-w-xs text-sm"
+                  >
+                    <ul class="divide-y-2 p-2">
+                      <li class="block"><a href="#">Computer Network</a></li>
+                      <li class="block"><a href="#">phone</a></li>
+                      <li class="block"><a href="#">laptop</a></li>
+                    </ul>
+                  </div>
                 </li>
-                <li class="my-1"> <a href="#">News</a></li>
+                <li class="my-1"><a href="#">News</a></li>
                 <li class="my-1">
                   <a href="#">Computer</a>
                 </li>
@@ -234,19 +236,23 @@
                   data-icon="material-symbols:keyboard-arrow-down-rounded"
                 ></span>
               </button>
-              <div class="absolute  group-hover:translate-x-[5px] duration-500 ease-in-out z-50">
-              <div class="hidden  group-hover:block w-60 ">
-                <div class=" bg-tertiary m-2 shadow-lg rounded-lg -ml-2 p-6">
-                <ul class="divide-y-2 2xl:text-xl xl:text-lg lg:text-md text-lg">
-                  <li class="block"><a href="#">Computer Network</a></li>
-                  <li class="block"><a href="#">phone</a></li>
-                  <li class="block"><a href="#">laptop</a></li>
-                </ul>
-              </div>
-
+              <div
+                class="absolute group-hover:translate-x-[5px] duration-500 ease-in-out z-50"
+              >
+                <div class="hidden group-hover:block w-60">
+                  <div class="bg-tertiary m-2 shadow-lg rounded-lg -ml-2 p-6">
+                    <ul
+                      class="divide-y-2 2xl:text-xl xl:text-lg lg:text-md text-lg"
+                    >
+                      <li class="block"><a href="#">Computer Network</a></li>
+                      <li class="block"><a href="#">phone</a></li>
+                      <li class="block"><a href="#">laptop</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </li>
-            <li class="group ">
+            <li class="group">
               <button
                 class="flex items-center gap-x-2 p-4 z-20 rounded-[5px] hover:bg-tertiary ease-in duration-200 group-hover:bg-tertiary"
               >
@@ -256,557 +262,566 @@
                   data-icon="material-symbols:keyboard-arrow-down-rounded"
                 ></span>
               </button>
-              <div class="absolute lg:left-[28px] xlg:left-[110px] group-hover: group-hover:translate-x-[5px] duration-500 ease-in-out z-50">
-              <div class="m-2 rounded-lg shadow-lg bg-tertiary">
-                <div class="hidden  group-hover:block">
-                <ul class="divide-y-2  2xl:text-xl xl:text-lg lg:text-sm">
-                  <div
-                    class="2xl:w-[1200px] 2xl:min-h-[400px] xl:w-[1000px] xl:min-h-[380px] lg:w-[950px] lg:min-h-[380px] py-6 flex flex-col sm:py-2"
-                  >
-                    <section class="py-2 mx-auto space-y-8">
+              <div
+                class="absolute lg:left-[28px] xlg:left-[110px] group-hover: group-hover:translate-x-[5px] duration-500 ease-in-out z-50"
+              >
+                <div class="m-2 rounded-lg shadow-lg bg-tertiary">
+                  <div class="hidden group-hover:block">
+                    <ul class="divide-y-2 2xl:text-xl xl:text-lg lg:text-sm">
                       <div
-                        class="container flex flex-row items-stretch justify-left space-x-4"
-                        x-data="{tab: 1}"
+                        class="2xl:w-[1200px] 2xl:min-h-[400px] xl:w-[1000px] xl:min-h-[380px] lg:w-[950px] lg:min-h-[380px] py-6 flex flex-col sm:py-2"
                       >
-                        <div
-                          class="flex flex-col justify-start w-1/12 space-y-2"
-                        >
-                          <a
-                            class="px-4 py-2"
-                            :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 1, ' transform -translate-x-2': tab !== 1}"
-                            href="#"
-                            @mouseover.prevent="tab = 1"
+                        <section class="py-2 mx-auto space-y-8">
+                          <div
+                            class="container flex flex-row items-stretch justify-left space-x-4"
+                            x-data="{tab: 1}"
                           >
-                            Apple
-                          </a>
-                          <a
-                            class="px-4 py-2"
-                            :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 2, ' transform -translate-x-2': tab !== 2}"
-                            href="#"
-                            @mouseover.prevent="tab = 2"
-                            @mouseover.prevent="tab = 2"
-                          >
-                            Samsung Zone
-                          </a>
+                            <div
+                              class="flex flex-col justify-start w-1/12 space-y-2"
+                            >
+                              <a
+                                class="px-4 py-2"
+                                :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 1, ' transform -translate-x-2': tab !== 1}"
+                                href="#"
+                                @mouseover.prevent="tab = 1"
+                              >
+                                Apple
+                              </a>
+                              <a
+                                class="px-4 py-2"
+                                :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 2, ' transform -translate-x-2': tab !== 2}"
+                                href="#"
+                                @mouseover.prevent="tab = 2"
+                                @mouseover.prevent="tab = 2"
+                              >
+                                Samsung Zone
+                              </a>
 
-                          <a
-                            class="px-4 py-2"
-                            :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 3, ' transform -translate-x-2': tab !== 3}"
-                            href="#"
-                            @mouseover.prevent="tab = 3"
-                            @mouseover.prevent="tab = 3"
-                          >
-                            Samsung Zone
-                          </a>
+                              <a
+                                class="px-4 py-2"
+                                :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 3, ' transform -translate-x-2': tab !== 3}"
+                                href="#"
+                                @mouseover.prevent="tab = 3"
+                                @mouseover.prevent="tab = 3"
+                              >
+                                Samsung Zone
+                              </a>
 
-                          <a
-                            class="px-4 py-2"
-                            :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 4, ' transform -translate-x-2': tab !== 4}"
-                            href="#"
-                            @mouseover.prevent="tab = 4"
-                            @mouseover.prevent="tab = 4"
-                          >
-                            Watch
-                          </a>
-                          <a
-                            class="px-4 py-2"
-                            :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 5, ' transform -translate-x-2': tab !== 5}"
-                            href="#"
-                            @mouseover.prevent="tab = 5"
-                            @mouseover.prevent="tab = 5"
-                          >
-                            Mi
-                          </a>
-                        </div>
+                              <a
+                                class="px-4 py-2"
+                                :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 4, ' transform -translate-x-2': tab !== 4}"
+                                href="#"
+                                @mouseover.prevent="tab = 4"
+                                @mouseover.prevent="tab = 4"
+                              >
+                                Watch
+                              </a>
+                              <a
+                                class="px-4 py-2"
+                                :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 5, ' transform -translate-x-2': tab !== 5}"
+                                href="#"
+                                @mouseover.prevent="tab = 5"
+                                @mouseover.prevent="tab = 5"
+                              >
+                                Mi
+                              </a>
+                            </div>
 
-                        <div class="w-9/12">
-                          <div class="space-y-6" x-show="tab === 1">
-                            <div class="flex flex-wrap gap-7">
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/Apple-iPhone-14-iPhone-14-Plus-hero-220907-geo_Full-Bleed-Image.jpg.large.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful and
-                                  premium
-                                </h3>
-                              </section>
+                            <div class="w-9/12">
+                              <div class="space-y-6" x-show="tab === 1">
+                                <div class="flex flex-wrap gap-7">
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/Apple-iPhone-14-iPhone-14-Plus-hero-220907-geo_Full-Bleed-Image.jpg.large.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful and
+                                      premium
+                                    </h3>
+                                  </section>
 
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful Colors
-                                </h3>
-                              </section>
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                      Colors
+                                    </h3>
+                                  </section>
 
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/Iphone-12.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/Iphone-12.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
 
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/iphone-14-pro-max-colors.png"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/iphone-14-pro-max-colors.png"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
 
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/Apple-iPhone-14-iPhone-14-Plus-hero-220907-geo_Full-Bleed-Image.jpg.large.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/Apple-iPhone-14-iPhone-14-Plus-hero-220907-geo_Full-Bleed-Image.jpg.large.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
 
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
 
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
 
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+                                </div>
+                              </div>
+
+                              <div class="space-y-6" x-show="tab === 2">
+                                <div class="flex flex-wrap gap-7">
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful and
+                                      premium
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                      Colors
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+                                </div>
+                              </div>
+
+                              <div class="space-y-6" x-show="tab === 3">
+                                <div class="flex flex-wrap gap-7">
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful and
+                                      premium
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                      Colors
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+                                </div>
+                              </div>
+
+                              <div class="space-y-6" x-show="tab === 4">
+                                <div class="flex flex-wrap gap-7">
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful and
+                                      premium
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                      Colors
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+                                </div>
+                              </div>
+                              <div class="space-y-6" x-show="tab === 5">
+                                <div class="flex flex-wrap gap-7">
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful and
+                                      premium
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                      Colors
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+
+                                  <section class="max-w">
+                                    <img
+                                      class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
+                                      src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
+                                      alt="iphone"
+                                    />
+                                    <h3 class="w-[150px] text-xs">
+                                      iPhone WIdth Changed Looking Beautiful
+                                    </h3>
+                                  </section>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="w-1/12">
+                              <p class="2xl:text-xl xl:text-lg text-secondary">
+                                Popular Tags
+                              </p>
+
+                              <ul
+                                class="2xl:text-lg xl:text-md divide divide-y-2 mt-2"
+                              >
+                                <li>
+                                  <a class="transition-transform" href=""
+                                    >iPhone</a
+                                  >
+                                </li>
+                                <li><a href=""> Samsung TV </a></li>
+                                <li><a href=""> Smart TV </a></li>
+                                <li><a href=""> Smart Phone </a></li>
+                              </ul>
                             </div>
                           </div>
-
-                          <div class="space-y-6" x-show="tab === 2">
-                            <div class="flex flex-wrap gap-7">
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful and
-                                  premium
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful Colors
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-                            </div>
-                          </div>
-
-                          <div class="space-y-6" x-show="tab === 3">
-                            <div class="flex flex-wrap gap-7">
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful and
-                                  premium
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful Colors
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-                            </div>
-                          </div>
-
-                          <div class="space-y-6" x-show="tab === 4">
-                            <div class="flex flex-wrap gap-7">
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful and
-                                  premium
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful Colors
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-                            </div>
-                          </div>
-                          <div class="space-y-6" x-show="tab === 5">
-                            <div class="flex flex-wrap gap-7">
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful and
-                                  premium
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful Colors
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-
-                              <section class="max-w">
-                                <img
-                                  class="w-[100%] max-w-[150px] rounded-sm shadow-md h-auto"
-                                  src="./assets/galaxy-s21-s21-price-in-nepal-21512521.jpg"
-                                  alt="iphone"
-                                />
-                                <h3 class="w-[150px] text-xs">
-                                  iPhone WIdth Changed Looking Beautiful
-                                </h3>
-                              </section>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="w-1/12">
-                          <p class="2xl:text-xl xl:text-lg text-secondary">
-                            Popular Tags
-                          </p>
-
-                          <ul
-                            class="2xl:text-lg xl:text-md divide divide-y-2 mt-2"
-                          >
-                            <li>
-                              <a class="transition-transform" href="">iPhone</a>
-                            </li>
-                            <li><a href=""> Samsung TV </a></li>
-                            <li><a href=""> Smart TV </a></li>
-                            <li><a href=""> Smart Phone </a></li>
-                          </ul>
-                        </div>
+                        </section>
                       </div>
-                    </section>
+                    </ul>
                   </div>
-                </ul>
-              </div>
-              </div>
+                </div>
               </div>
             </li>
 
@@ -841,117 +856,117 @@
               <div
                 class="2xl:left-[650px] xl:left-[400px] lg:left-[200px] absolute group-hover:translate-x-[5px] duration-500 ease-in-out z-50"
               >
-              <div class=" bg-tertiary rounded-lg shadow-lg m-2">
-                <div class="hidden group-hover:block">
+                <div class="bg-tertiary rounded-lg shadow-lg m-2">
+                  <div class="hidden group-hover:block">
+                    <ul class="text-lg">
+                      <div
+                        class="min-h-[70] w-[750px] py-6 flex flex-wrap sm:py-2"
+                      >
+                        <section class="py-2 mx-auto">
+                          <div class="container flex justify-center space-x-4">
+                            <div class="flex flex-wrap justify-center gap-7">
+                              <section>
+                                <div
+                                  class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
+                                  style="
+                                    background-image: url(/public/assets/vpavic_210916_4760_0240.jpg);
+                                  "
+                                ></div>
+                                <h3 class="w-[150px] text-xs">
+                                  iPhone WIdth Changed Looking Beautiful and
+                                  premium
+                                </h3>
+                              </section>
 
-                <ul
-                  class="text-lg "
-                >
-                  <div class="min-h-[70] w-[750px] py-6 flex flex-wrap sm:py-2">
-                    <section class="py-2 mx-auto">
-                      <div class="container flex justify-center space-x-4">
-                        <div class="flex flex-wrap justify-center gap-7">
-                          <section>
-                            <div
-                              class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
-                              style="
-                                background-image: url(/public/assets/vpavic_210916_4760_0240.jpg);
-                              "
-                            ></div>
-                            <h3 class="w-[150px] text-xs">
-                              iPhone WIdth Changed Looking Beautiful and premium
-                            </h3>
-                          </section>
+                              <section>
+                                <div
+                                  class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
+                                  style="
+                                    background-image: url(/public/assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
+                                  "
+                                ></div>
+                                <h3 class="w-[150px] text-xs">
+                                  iPhone WIdth Changed Looking Beautiful Colors
+                                </h3>
+                              </section>
 
-                          <section>
-                            <div
-                              class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
-                              style="
-                                background-image: url(/public/assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                              "
-                            ></div>
-                            <h3 class="w-[150px] text-xs">
-                              iPhone WIdth Changed Looking Beautiful Colors
-                            </h3>
-                          </section>
+                              <section class="w-[100%] max-w-[150px]">
+                                <div
+                                  class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
+                                  style="
+                                    background-image: url(/public/assets/Iphone-12.jpg);
+                                  "
+                                ></div>
+                                <h3 class="w-[150px] text-xs">
+                                  iPhone WIdth Changed Looking Beautiful
+                                </h3>
+                              </section>
 
-                          <section class="w-[100%] max-w-[150px]">
-                            <div
-                              class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
-                              style="
-                                background-image: url(/public/assets/Iphone-12.jpg);
-                              "
-                            ></div>
-                            <h3 class="w-[150px] text-xs">
-                              iPhone WIdth Changed Looking Beautiful
-                            </h3>
-                          </section>
+                              <section class="">
+                                <div
+                                  class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
+                                  style="
+                                    background-image: url(/public/assets/iphone-14-pro-max-colors.png);
+                                  "
+                                ></div>
+                                <h3 class="w-[150px] text-xs">
+                                  iPhone WIdth Changed Looking Beautiful
+                                </h3>
+                              </section>
 
-                          <section class="">
-                            <div
-                              class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
-                              style="
-                                background-image: url(/public/assets/iphone-14-pro-max-colors.png);
-                              "
-                            ></div>
-                            <h3 class="w-[150px] text-xs">
-                              iPhone WIdth Changed Looking Beautiful
-                            </h3>
-                          </section>
+                              <section class="w-[100%] max-w-[150px]">
+                                <img
+                                  class="rounded-sm shadow-md h-auto"
+                                  src="./assets/Apple-iPhone-14-iPhone-14-Plus-hero-220907-geo_Full-Bleed-Image.jpg.large.jpg"
+                                  alt="iphone"
+                                />
+                                <h3 class="w-[150px] text-xs">
+                                  iPhone WIdth Changed Looking Beautiful
+                                </h3>
+                              </section>
 
-                          <section class="w-[100%] max-w-[150px]">
-                            <img
-                              class="rounded-sm shadow-md h-auto"
-                              src="./assets/Apple-iPhone-14-iPhone-14-Plus-hero-220907-geo_Full-Bleed-Image.jpg.large.jpg"
-                              alt="iphone"
-                            />
-                            <h3 class="w-[150px] text-xs">
-                              iPhone WIdth Changed Looking Beautiful
-                            </h3>
-                          </section>
+                              <section>
+                                <div
+                                  class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
+                                  style="
+                                    background-image: url(/public/assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
+                                  "
+                                ></div>
+                                <h3 class="w-[150px] text-xs">
+                                  iPhone WIdth Changed Looking Beautiful
+                                </h3>
+                              </section>
 
-                          <section>
-                            <div
-                              class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
-                              style="
-                                background-image: url(/public/assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                              "
-                            ></div>
-                            <h3 class="w-[150px] text-xs">
-                              iPhone WIdth Changed Looking Beautiful
-                            </h3>
-                          </section>
+                              <section class="w-[100%] max-w-[150px]">
+                                <div
+                                  class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
+                                  style="
+                                    background-image: url(/public/assets/og__e3mis7k4cmuu.png);
+                                  "
+                                ></div>
+                                <h3 class="w-[150px] text-xs">
+                                  iPhone WIdth Changed Looking Beautiful
+                                </h3>
+                              </section>
 
-                          <section class="w-[100%] max-w-[150px]">
-                            <div
-                              class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
-                              style="
-                                background-image: url(/public/assets/og__e3mis7k4cmuu.png);
-                              "
-                            ></div>
-                            <h3 class="w-[150px] text-xs">
-                              iPhone WIdth Changed Looking Beautiful
-                            </h3>
-                          </section>
-
-                          <section class="w-[100%] max-w-[150px]">
-                            <div
-                              class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
-                              style="
-                                background-image: url(/public/assets/galaxy-s21-s21-price-in-nepal-21512521.jpg);
-                              "
-                            ></div>
-                            <h3 class="w-[150px] text-xs">
-                              iPhone WIdth Changed Looking Beautiful
-                            </h3>
-                          </section>
-                        </div>
+                              <section class="w-[100%] max-w-[150px]">
+                                <div
+                                  class="w-[100%] h-[90px] max-w-[150px] bg-cover bg-center rounded-sm shadow-md"
+                                  style="
+                                    background-image: url(/public/assets/galaxy-s21-s21-price-in-nepal-21512521.jpg);
+                                  "
+                                ></div>
+                                <h3 class="w-[150px] text-xs">
+                                  iPhone WIdth Changed Looking Beautiful
+                                </h3>
+                              </section>
+                            </div>
+                          </div>
+                        </section>
                       </div>
-                    </section>
+                    </ul>
                   </div>
-                </ul>
-              </div>
-              </div>
+                </div>
               </div>
             </li>
           </ul>
@@ -1044,11 +1059,8 @@
     <div class="transform-none">
       <div class="transform-none">
         <div class="transform-none">
-
           <!-- First Row -->
-          <div
-            class="container w-full  transform-none mx-auto"
-          >
+          <div class="container w-full transform-none mx-auto">
             <div class="flex flex-wrap justify-center">
               <!-- First Column of first row -->
               <div class="w-[20%] max-lg:hidden">
@@ -1244,85 +1256,95 @@
                     </div>
                   </div>
 
-                  <div class=" relative border-solid border-2 bg-tertiary rounded-md -top-16">
+                  <div
+                    class="relative border-solid border-2 bg-tertiary rounded-md -top-16"
+                  >
                     <div>
-                      <div
-                      class="relative z-10 w-[95%] h-[240px] mx-auto"
-                    >
-                      <div class="">
-                        <div
-                          class="mb-1 text-primary text-2xl font-sans font-bold"
-                        >
-                          <a href="#"
-                            ><h3>
-                              Asus ZenBook UX305 review: A most affordable and
-                              excellent Ultrabook
-                            </h3></a
+                      <div class="relative z-10 w-[95%] h-[240px] mx-auto">
+                        <div class="">
+                          <div
+                            class="mb-1 text-primary text-2xl font-sans font-bold"
                           >
-                        </div>
-                        <div>
-                          <div class="flex items-center text-lg text-secondary">
-                            <div class="flex">
-                              <span
-                                class="iconify"
-                                data-icon="material-symbols:star"
-                              ></span>
-                              <span
-                                class="iconify"
-                                data-icon="material-symbols:star"
-                              ></span>
-                              <span
-                                class="iconify"
-                                data-icon="material-symbols:star"
-                              ></span>
-                              <span
-                                class="iconify"
-                                data-icon="material-symbols:star"
-                              ></span>
-                              <span
-                                class="iconify"
-                                data-icon="material-symbols:star-half"
-                              ></span>
+                            <a href="#"
+                              ><h3>
+                                Asus ZenBook UX305 review: A most affordable and
+                                excellent Ultrabook
+                              </h3></a
+                            >
+                          </div>
+                          <div>
+                            <div
+                              class="flex items-center text-lg text-secondary"
+                            >
+                              <div class="flex">
+                                <span
+                                  class="iconify"
+                                  data-icon="material-symbols:star"
+                                ></span>
+                                <span
+                                  class="iconify"
+                                  data-icon="material-symbols:star"
+                                ></span>
+                                <span
+                                  class="iconify"
+                                  data-icon="material-symbols:star"
+                                ></span>
+                                <span
+                                  class="iconify"
+                                  data-icon="material-symbols:star"
+                                ></span>
+                                <span
+                                  class="iconify"
+                                  data-icon="material-symbols:star-half"
+                                ></span>
+                              </div>
+                              <div class="ml-2">
+                                By
+                                <span class="font-semibold">
+                                  <a href="#">Alex Poudel</a></span
+                                >
+                              </div>
+                              <div class="flex items-center ml-2">
+                                <span
+                                  class="iconify mr-2"
+                                  data-icon="material-symbols:nest-clock-farsight-analog-outline"
+                                ></span>
+                                <span>December 4, 2022</span>
+                              </div>
                             </div>
-                            <div class="ml-2">
-                              By
-                              <span class="font-semibold">
-                                <a href="#">Alex Poudel</a></span
+                          </div>
+
+                          <div>
+                            <a href="">
+                              <p>
+                                Dropcap the popularization of the “ideal
+                                measure” has led to advice such as “Increase
+                                font size for large screens and reduce font size
+                                for small screens.” While a good measure...
+                              </p>
+
+                              <div
+                                class="flex flex-row justify-center items-center gap-x-5"
                               >
-                            </div>
-                            <div class="flex items-center ml-2">
-                              <span
-                                class="iconify mr-2"
-                                data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                              ></span>
-                              <span>December 4, 2022</span>
-                            </div>
+                                <div class="flex items-center">
+                                  <span
+                                    class="iconify"
+                                    data-icon="mdi:eye-check-outline"
+                                  ></span>
+                                  <span>13K</span>
+                                </div>
+                                <div class="flex items-center">
+                                  <span
+                                    class="iconify"
+                                    data-icon="noto:clapping-hands"
+                                  ></span>
+                                  <span>3K</span>
+                                </div>
+                              </div>
+                            </a>
                           </div>
                         </div>
-                        
-                        <div>
-                         <a href="">
-                          <p>
-                            Dropcap the popularization of the “ideal measure”
-                            has led to advice such as “Increase font size for
-                            large screens and reduce font size for small
-                            screens.” While a good measure...
-                          </p>
-                          
-                          <div class="flex flex-row justify-center items-center gap-x-5">
-                            <div class="flex items-center"> <span class="iconify" data-icon="mdi:eye-check-outline"></span> <span>13K</span></div>
-                            <div class="flex items-center"><span class="iconify" data-icon="noto:clapping-hands"></span></span> <span>3K</span></div>
-
-                          </div>
-
-                          
-                        </a>
-                        </div>
-
-                        
-                        
                       </div>
-                    </div>
                     </div>
                   </div>
                 </div>
@@ -1596,24 +1618,15 @@
 
           <!-- Second Row -->
 
-          <div class="bg-tertiary p-10 ">
-            
-            <div class="container mx-auto flex bg-white w-full  lg:aspect-[16/5.78] ">
-            
-
-              <div>
-                <iframe
-                  width="745"
-                  height="419"
-                  src="https://www.youtube.com/embed/DuudSp4sHmg"
-                  title="Fetching All Videos of a channel | Youtube Data API V3"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+          <div class="container relative bg-tertiary p-10 w-full mx-auto">
+            <div class="mx-auto bg-white h-[480px]">
+              <div class="w-8/12 float-left overflow-hidden">
+                <div class="w-full">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/mTrsShdSNKg" title="India Pakistan 1971 War | Why it happened? | Bangladesh Liberation | Dhruv Rathee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
 
-              <div>
+              <div class="w-4/12 float-right h-auto">
                 <div class="flex flex-col ml-2">
                   <div class="bg-secondary p-2 shadow-xl">
                     <p class="text-white font-sans">Current Playing</p>
@@ -1622,9 +1635,9 @@
                     </h3>
                   </div>
 
-                  <div class="flex flex-col mt-2 divide-y-2 aspect-[9/7.5] overflow-scroll">
-
-
+                  <div
+                    class="flex flex-col mt-2 divide-y-2 aspect-[9/9.5] overflow-scroll"
+                  >
                     <div class="flex items-center gap-x-2">
                       <div class=" ">
                         <span
@@ -1764,8 +1777,6 @@
                         </div>
                       </div>
                     </div>
-
-
                   </div>
                 </div>
               </div>
@@ -1774,608 +1785,90 @@
           <!-- Second Row -->
         </div>
 
-        <!--  Third Row Post-Box-1[Square Box Style] -->
+        <!--  Third Row -->
 
-        <div class="container transform-none">
-
-          <h3 class="text-primary text-lg font-mono font-semibold uppercase mb-4 ml-[105px]">
-            Latest <span class="text-secondary">Blogs</span>
-          </h3>
-
-          
-
-          <div class="flex flex-wrap justify-center items-center gap-x-5">
-
-            <div class="">
-              <div>
-                <div>
-                  <div
-                    class="bg-gradient-to-r from-purple-500 to-pink-500"
+        <div class="container w-full transform-none mx-auto">
+          <div class="flex flex-wrap justify-around mx-10">
+            <!-- First Column of first row -->
+            <div class="w-7/12">
+              <div class="p-2">
+                <div class="flex flex-col">
+                  <h3
+                    class="text-primary ml-2 text-lg font-mono font-semibold uppercase mb-2"
                   >
-                    <a href="#">
-                      <div
-                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
-                        style="
-                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-                  <div
-                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
-                  >
-                    <div class="">
-                      <div
-                        class="mb-1 text-primary text-lg font-sans font-bold"
-                      >
-                        <a href="#"
-                          ><h3>
-                            Asus ZenBook UX305 review: A most
-                            affordable and excellent Ultrabook
-                          </h3></a
-                        >
-                      </div>
+                    Latest <span class="text-secondary">Blogs</span>
+                  </h3>
+                    <div class="flex flex-col">
                       <div>
-                        <div
-                          class="flex items-center lg:text-xs text-sm text-secondary"
-                        >
-                          <div class="flex">
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star-half"
-                            ></span>
-                          </div>
+                        <div class="p-1">
+                          <div class="">
+                            <div class="flex justify-between items-center mb-1 line">
+                              <div class="text-primary ml-2 text-sm font-mono font-semibold uppercase">Dec 6, 2022</div>
+                              <div class="p-1 text-sm bg-secondary text-white rounded-sm">Smart Phone</div>
 
-                          <div class="flex items-center ml-2">
-                            <span
-                              class="iconify mr-2"
-                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                            ></span>
-                            <span class="text-xs"
-                              >December 4, 2022</span
-                            >
+
+                            </div>
+
+                            <div class="flex justify-between">
+                            <div
+                              class="bg-cover bg-center w-[200px] h-auto px]"
+                              style="
+                                background-image: url(./assets/og__e3mis7k4cmuu.png);
+                              "
+                            ></div>
+                            <div class="ml-3 w-[480px]">
+                              <div>
+                                <h3
+                                  class="mb-1 text-primary text-2xl font-sans font-semibold"
+                                >
+                                  Jeep Compass adfa dsf adf adsfdf  dfasd sdfasdf amazing car is going
+                                </h3>
+                              </div>
+                              <div class="line-clamp-5 inline mb-1 text-lg text-primary font-sans">
+                                <p>
+                                  Jeep Compass adfa dsf adf adsfdf  dfasd sdfasdf amazing car is Jeep Compass adfa dsf adf adsfdf  dfasd sdfasdf amazing car is Jeep Compass adfa dsf adf adsfdf  dfasd sdfasdf amazing car is goindfsdfsf 
+
+                                </p>
+                              </div>
+                            </div>
                           </div>
                         </div>
+                        </div>
                       </div>
-                    </div>
                   </div>
+                
+              </div>
+            </div>
+            </div>
+            <!-- First Column of first row -->
+
+            <!-- Second Column of first row -->
+            <div class="w-4/12">
+              <div class="p-2">
+                <div class="flex flex-col">
+                  <h3
+                    class="text-primary text-lg font-mono font-semibold uppercase mb-4"
+                  >
+                    Popular <span class="text-secondary">Posts</span>
+                  </h3>
+                  <!--Block Container-->
+                  <div>
+
+
+                    
+                  </div>
+
+                  
+                 
                 </div>
               </div>
             </div>
-
-            <div class="">
-              <div>
-                <div>
-                  <div
-                    class="bg-gradient-to-r from-purple-500 to-pink-500"
-                  >
-                    <a href="#">
-                      <div
-                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
-                        style="
-                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-                  <div
-                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
-                  >
-                    <div class="">
-                      <div
-                        class="mb-1 text-primary text-lg font-sans font-bold"
-                      >
-                        <a href="#"
-                          ><h3>
-                            Asus ZenBook UX305 review: A most
-                            affordable and excellent Ultrabook
-                          </h3></a
-                        >
-                      </div>
-                      <div>
-                        <div
-                          class="flex items-center lg:text-xs text-sm text-secondary"
-                        >
-                          <div class="flex">
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star-half"
-                            ></span>
-                          </div>
-
-                          <div class="flex items-center ml-2">
-                            <span
-                              class="iconify mr-2"
-                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                            ></span>
-                            <span class="text-xs"
-                              >December 4, 2022</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="">
-              <div>
-                <div>
-                  <div
-                    class="bg-gradient-to-r from-purple-500 to-pink-500"
-                  >
-                    <a href="#">
-                      <div
-                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
-                        style="
-                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-                  <div
-                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
-                  >
-                    <div class="">
-                      <div
-                        class="mb-1 text-primary text-lg font-sans font-bold"
-                      >
-                        <a href="#"
-                          ><h3>
-                            Asus ZenBook UX305 review: A most
-                            affordable and excellent Ultrabook
-                          </h3></a
-                        >
-                      </div>
-                      <div>
-                        <div
-                          class="flex items-center lg:text-xs text-sm text-secondary"
-                        >
-                          <div class="flex">
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star-half"
-                            ></span>
-                          </div>
-
-                          <div class="flex items-center ml-2">
-                            <span
-                              class="iconify mr-2"
-                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                            ></span>
-                            <span class="text-xs"
-                              >December 4, 2022</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="">
-              <div>
-                <div>
-                  <div
-                    class="bg-gradient-to-r from-purple-500 to-pink-500"
-                  >
-                    <a href="#">
-                      <div
-                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
-                        style="
-                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-                  <div
-                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
-                  >
-                    <div class="">
-                      <div
-                        class="mb-1 text-primary text-lg font-sans font-bold"
-                      >
-                        <a href="#"
-                          ><h3>
-                            Asus ZenBook UX305 review: A most
-                            affordable and excellent Ultrabook
-                          </h3></a
-                        >
-                      </div>
-                      <div>
-                        <div
-                          class="flex items-center lg:text-xs text-sm text-secondary"
-                        >
-                          <div class="flex">
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star-half"
-                            ></span>
-                          </div>
-
-                          <div class="flex items-center ml-2">
-                            <span
-                              class="iconify mr-2"
-                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                            ></span>
-                            <span class="text-xs"
-                              >December 4, 2022</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="">
-              <div>
-                <div>
-                  <div
-                    class="bg-gradient-to-r from-purple-500 to-pink-500"
-                  >
-                    <a href="#">
-                      <div
-                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
-                        style="
-                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-                  <div
-                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
-                  >
-                    <div class="">
-                      <div
-                        class="mb-1 text-primary text-lg font-sans font-bold"
-                      >
-                        <a href="#"
-                          ><h3>
-                            Asus ZenBook UX305 review: A most
-                            affordable and excellent Ultrabook
-                          </h3></a
-                        >
-                      </div>
-                      <div>
-                        <div
-                          class="flex items-center lg:text-xs text-sm text-secondary"
-                        >
-                          <div class="flex">
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star-half"
-                            ></span>
-                          </div>
-
-                          <div class="flex items-center ml-2">
-                            <span
-                              class="iconify mr-2"
-                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                            ></span>
-                            <span class="text-xs"
-                              >December 4, 2022</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="">
-              <div>
-                <div>
-                  <div
-                    class="bg-gradient-to-r from-purple-500 to-pink-500"
-                  >
-                    <a href="#">
-                      <div
-                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
-                        style="
-                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-                  <div
-                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
-                  >
-                    <div class="">
-                      <div
-                        class="mb-1 text-primary text-lg font-sans font-bold"
-                      >
-                        <a href="#"
-                          ><h3>
-                            Asus ZenBook UX305 review: A most
-                            affordable and excellent Ultrabook
-                          </h3></a
-                        >
-                      </div>
-                      <div>
-                        <div
-                          class="flex items-center lg:text-xs text-sm text-secondary"
-                        >
-                          <div class="flex">
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star-half"
-                            ></span>
-                          </div>
-
-                          <div class="flex items-center ml-2">
-                            <span
-                              class="iconify mr-2"
-                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                            ></span>
-                            <span class="text-xs"
-                              >December 4, 2022</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="">
-              <div>
-                <div>
-                  <div
-                    class="bg-gradient-to-r from-purple-500 to-pink-500"
-                  >
-                    <a href="#">
-                      <div
-                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
-                        style="
-                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-                  <div
-                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
-                  >
-                    <div class="">
-                      <div
-                        class="mb-1 text-primary text-lg font-sans font-bold"
-                      >
-                        <a href="#"
-                          ><h3>
-                            Asus ZenBook UX305 review: A most
-                            affordable and excellent Ultrabook
-                          </h3></a
-                        >
-                      </div>
-                      <div>
-                        <div
-                          class="flex items-center lg:text-xs text-sm text-secondary"
-                        >
-                          <div class="flex">
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star-half"
-                            ></span>
-                          </div>
-
-                          <div class="flex items-center ml-2">
-                            <span
-                              class="iconify mr-2"
-                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                            ></span>
-                            <span class="text-xs"
-                              >December 4, 2022</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="">
-              <div>
-                <div>
-                  <div
-                    class="bg-gradient-to-r from-purple-500 to-pink-500"
-                  >
-                    <a href="#">
-                      <div
-                        class="bg-cover overflow-hidden bg-no-repeat bg-center xl:w-[252px] h-[250px] lg:w-[218.2px] md:w-[211.7px] opacity-80 hover:cursor-pointer shadow-md hover:scale-[1.005] transition ease-in duration-75"
-                        style="
-                          background-image: url(./assets/Apple_watch-experience-for-entire-family-hero_09152020_big.jpg.large.jpg);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-                  <div
-                    class="p-4 relative -top-16 z-10 xl:w-[240px] lg:w-[210px] md:w-[200px] w-[245px] h-[130px] bg-white mx-auto"
-                  >
-                    <div class="">
-                      <div
-                        class="mb-1 text-primary text-lg font-sans font-bold"
-                      >
-                        <a href="#"
-                          ><h3>
-                            Asus ZenBook UX305 review: A most
-                            affordable and excellent Ultrabook
-                          </h3></a
-                        >
-                      </div>
-                      <div>
-                        <div
-                          class="flex items-center lg:text-xs text-sm text-secondary"
-                        >
-                          <div class="flex">
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star"
-                            ></span>
-                            <span
-                              class="iconify"
-                              data-icon="material-symbols:star-half"
-                            ></span>
-                          </div>
-
-                          <div class="flex items-center ml-2">
-                            <span
-                              class="iconify mr-2"
-                              data-icon="material-symbols:nest-clock-farsight-analog-outline"
-                            ></span>
-                            <span class="text-xs"
-                              >December 4, 2022</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-
+            <!-- Second Column of first row -->
         </div>
-        
-        <!-- Third Row -->
+        </div>
+      </div>
 
+        <!-- Third Row -->
       </div>
     </div>
   </body>
