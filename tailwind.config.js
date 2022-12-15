@@ -11,6 +11,10 @@ module.exports = {
         secondary: "#cf2e2e",
         tertiary: "#f2f2f2",
         scrollbarcolor: "#858585",
+        blue: "#0d86f7",
+        indexcolor: "#f7940d",
+        affibtn: "#43c801"
+
       },
       screens: {
         'xlg': '1150px',
